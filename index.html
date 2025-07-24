@@ -14,10 +14,30 @@
 
     <style>
         @media screen and (max-width: 576px) {
-            .body{
-                max-width: 400px;
-                margin: auto;
+            .main-section {
+                margin-left: 20px;
+                margin-right: 20px;
             }
+
+            .hero-section {
+                background: url('./assets/news-letter-bg.png') no-repeat center center/cover;
+                height: 50vh;
+                width: 485px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            .hero-form{
+                width: 100px;
+                margin-right: 200px;
+            }
+
             .link {
                 visibility: hidden;
             }
@@ -32,8 +52,16 @@
                 width: 100%;
             }
 
+            .bannar-h1 {
+                visibility: hidden;
+            }
+
             .bannar-h1-r {
                 visibility: visible;
+            }
+
+            .nokta1 {
+                color: #E95A08;
             }
 
             .card-section {
@@ -43,7 +71,7 @@
             }
 
             .card-button {
-                width: 48%;
+                width: 100%
             }
 
             .container {
@@ -51,19 +79,38 @@
                 flex-direction: column;
             }
 
-            .lover-img2{
+            .lover-img2 {
                 visibility: hidden;
             }
 
-            .lover-div{
+            .lover-div {
                 display: flex;
                 flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
             }
 
-            .footer-container{
+            .lover-h2 {
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .lover-li {
+                font-weight: normal;
+                font-size: 14px;
+            }
+
+
+            .footer-container {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+            }
+
+            .extra-section{
+                margin-left: 20px;
+                margin-right: 20px;
+                
             }
         }
     </style>
@@ -94,7 +141,7 @@
         <section class="bannar-section noto-serif-font">
             <div>
                 <h1 class="bannar-h1">FLOWERS</h1>
-                <h1 class="bannar-h1-r">ALWAYS FRESH <br> FLOWERS</h1>
+                <h1 class="bannar-h1-r">ALWAYS <span class="nokta1"> FRESH <br> FLOWERS</span> </h1>
 
                 <p class="bannar-para inter-font">Indulge your senses with the beauty and fragrance of <br> our fresh
                     flower shop. From classic roses to exotic <br> blooms, we offer a wide variety of fresh flowers that
@@ -229,7 +276,7 @@
         </section>
 
         <!-- Extra section start -->
-        <section>
+        <section class="extra-section">
             <h2 class="extra-h2 noto-serif-font">
                 <span style="color: #E95A08;">Latest</span> Deals
             </h2>
@@ -240,17 +287,17 @@
                 <!-- Left side -->
                 <div class="left">
                     <div class="card small" style="background-image: url('./assets/deal-bloom.png');">
-                        <p class="text">60% Off | Bloom Plant <br><span class="btn">Shop Now</span></p>
+                        <p class="text-1">60% Off | Bloom Plant <br><span class="btn-1">Shop Now</span></p>
                     </div>
 
                     <div class="card small" style="background-image: url('./assets/deal-ana.png');">
-                        <p class="text">30% Off | Ana Plant <br><span class="btn">Shop Now</span></p>
+                        <p class="text-1">30% Off | Ana Plant <br><span class="btn-1">Shop Now</span></p>
                     </div>
                 </div>
 
                 <!-- Right side -->
                 <div class="card large" style="background-image: url('./assets/deal-zabo.png');">
-                    <p class="text">25% Off | Zabo Plant <br><span class="btn">Shop Now</span></p>
+                    <p class="text-2">25% Off | Zabo Plant <br><span class="btn-2">Shop Now</span></p>
                 </div>
             </div>
 
@@ -262,7 +309,7 @@
         <section class="hero-section">
             <h1 class="hero-title">Join the colorful Bunch</h1>
             <form class="hero-form">
-                <input style="border-radius: 0%; width: 500px;" type="email" placeholder="Write email" required>
+                <input class="input1" style="border-radius: 0%; width: 500px;" type="email" placeholder="Write email" required>
                 <button style="border-radius: 0%; width: 200px;" type="submit">Subscribe</button>
             </form>
 
@@ -274,7 +321,8 @@
             <div class="footer-div">
                 <img class="footer-logo" src="./assets/logo.png" alt="">
                 <p class="footer-para inter-font">Indulge your senses with the <br> beauty and fragrance of our fresh
-                    <br> flower shop. </p>
+                    <br> flower shop.
+                </p>
             </div>
 
             <div>
