@@ -28,6 +28,7 @@
 
 .navstyle{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -247,7 +248,7 @@
    
 
     .hero-section {
-      background: url('./B12A02-Responsive-Flowers/assets/news-letter-bg.png')
+      background: url('./assets/news-letter-bg.png')
       no-repeat center center/cover;
       height: 70vh;
       display: flex;
@@ -319,4 +320,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+
+  .footer-logo{
+    padding-bottom: 20px;
   }
