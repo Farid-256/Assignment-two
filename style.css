@@ -22,7 +22,7 @@
 
 /* Navbar style */
 .navhead{
-    width: 1120px;
+    max-width: 1120px;
     margin: 35px auto;
 }
 
@@ -57,7 +57,7 @@
 
 /* Bannar style */
 .bannar-section{
-    width: 1120px;
+    max-width: 1120px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -83,7 +83,7 @@
 
 /* Plants Section style */
 .main-section{
-    width: 1120px;
+    max-width: 1120px;
     margin: auto;
     margin-top: 120px;
 }
@@ -137,7 +137,7 @@
 
 /* Plant lover style */
 .lover-section{
-    width: 1120px;
+    max-width: 1120px;
     margin: auto;
     margin-top: 210px;
     margin-bottom: 120px;
@@ -229,7 +229,6 @@
 
 .btn {
   display: inline-block;
-  
   color: white;
   text-decoration: underline;
   padding: 5px 10px;
@@ -244,8 +243,6 @@
       margin: 0;
       padding: 0;
     }
-
-   
 
     .hero-section {
       background: url('./assets/news-letter-bg.png')
@@ -276,7 +273,6 @@
       padding: 12px;
       font-size: 1rem;
       border: none;
-      border-radius: 5px 5px 0 0;
     }
 
     .hero-form button {
@@ -285,7 +281,6 @@
       background-color: #E95A08;
       color: white;
       border: none;
-      border-radius: 0 0 5px 5px;
       cursor: pointer;
     }
 
